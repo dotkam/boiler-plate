@@ -12,7 +12,7 @@ export default class Submit extends Component {
   		<button
     			name='submit'
           className='submit'
-          onClick={console.log('click')}
+          onClick={this.props.submit}
 			>Login</button>
 		)
 	}

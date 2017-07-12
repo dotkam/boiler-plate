@@ -14,7 +14,7 @@ h1 {
   font-weight: 500;
 }
 
-#slide-left {
+.slide-left {
   animation: slide-left 1s;
 }
 
@@ -52,6 +52,12 @@ h1 {
   box-shadow: 0 2px 0 #0c1547;
   color: white;
   font-size: .9em;
+}
+
+#submit-error {
+  float: right;
+  color: red;
+  margin-top: -28px;
 }
 
 .submit:hover {
