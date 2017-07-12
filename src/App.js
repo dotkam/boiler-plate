@@ -6,7 +6,7 @@ export default class App extends Component {
   render() {
     return (
       <div className='container'>
-        <h1>Log in to Dashboard</h1>
+        <h1 id='slide-left'>Log in to Dashboard</h1>
         <Login />
       </div>
     );

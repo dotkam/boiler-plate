@@ -1,12 +1,33 @@
+@import
+url(https://fonts.googleapis.com/css?family=Rubik);
+
 .container {
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
   width: 400px;
   margin: 0 auto;
+  overflow: hidden;
 }
+
 
 h1 {
   text-align: center;
-  font-style: italic;
+  font-weight: 500;
+}
+
+#slide-left {
+  animation: slide-left 1s;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .input {
@@ -17,7 +38,7 @@ h1 {
   width: 100%;
   max-width: 400px;
   text-rendering: auto;
-  color: #30aadd;
+  color: black;
   margin-bottom: 10px;
   font-size: .9em;
 }
@@ -31,4 +52,12 @@ h1 {
   box-shadow: 0 2px 0 #0c1547;
   color: white;
   font-size: .9em;
+}
+
+.submit:hover {
+  background: linear-gradient(to bottom, #30aadd 0, #0c1547 100%);
+}
+
+.submit:active {
+  background: linear-gradient(to bottom, #0d4d96 0, #0c1547 100%); 
 }

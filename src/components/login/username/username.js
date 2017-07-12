@@ -23,7 +23,7 @@ export default class Username extends Component {
     			type='text'
     			name='username'
           className="input"
-          placeholder='user'
+          placeholder='username'
     			value={this.state.username}
           onChange={this.handleChange}
           onBlur={this.props.updateParent}
